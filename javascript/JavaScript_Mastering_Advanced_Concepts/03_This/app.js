@@ -66,3 +66,5 @@ function maximum() {
   console.log(arguments);
   return Math.max.apply(null, arguments);
 }
+
+const lisaSing = conan.sing.bind(lisa);
