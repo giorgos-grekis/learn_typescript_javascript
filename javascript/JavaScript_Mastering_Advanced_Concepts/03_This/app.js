@@ -1,10 +1,15 @@
-const person = {
+const conan = {
   name: "Conan",
   city: "Los Angeles",
   sing() {
     console.log("THIS is:", this);
     return `${this.name} sings LA LA LA`;
   },
+};
+
+const lisa = {
+  name: "Lisa",
+  city: "Los Angeles",
 };
 
 class Cat {
