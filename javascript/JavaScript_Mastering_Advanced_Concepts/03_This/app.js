@@ -68,3 +68,20 @@ function maximum() {
 }
 
 const lisaSing = conan.sing.bind(lisa);
+
+// Binding Arguments
+function applySalesTax(taxRate, price) {
+  return price + price * taxRate;
+}
+
+const applyCASalesTax = applySalesTax.bind(null, 0.0725);
+const applyMTSalesTax = applySalesTax.bind(null, 0);
+
+function multiply(a, b) {
+  return a * b;
+}
+
+const double = multiply.bind(null, 2);
+const triple = multiply.bind(null, 3);
+
+const alwaysNine = multiply.bind(null, 3, 3);
