@@ -47,3 +47,22 @@ const obj = {
   age: 2,
   whatIsThis: whatIsThis,
 };
+
+const ringo = {
+  firstName: "Ringo",
+  greet(greeting, punctuation) {
+    console.log(`${this.firstName} says ${greeting}${punctuation}`);
+  },
+};
+
+const george = {
+  firstName: "George",
+  lastName: "Harrison",
+};
+
+const nums = [1, 2, 3, 69, 42];
+
+function maximum() {
+  console.log(arguments);
+  return Math.max.apply(null, arguments);
+}
