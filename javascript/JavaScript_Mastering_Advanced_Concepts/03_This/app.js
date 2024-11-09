@@ -12,7 +12,12 @@ class Cat {
     this.firstName = firstName;
   }
 
+  static getRandomCat() {
+    console.log("THIS IS: ", this);
+  }
+
   dance(style = "tango") {
+    console.log("THIS IS: ", this);
     return `Meow I am ${this.firstName} and I like to ${style}`;
   }
 }
