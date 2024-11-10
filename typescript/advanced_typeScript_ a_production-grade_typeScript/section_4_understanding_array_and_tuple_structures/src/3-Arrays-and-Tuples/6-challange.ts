@@ -3,7 +3,8 @@ import { Equal, Expect } from "..";
 /**
  * Utility type to get the length of a tuple.
  */
-export type TupleLength<T extends any[]> = TODO;
+// export type TupleLength<T extends any[]> = TODO;
+export type TupleLength<T extends readonly unknown[]> = T["length"];
 
 // Example usage and tests
 

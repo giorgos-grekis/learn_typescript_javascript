@@ -24,6 +24,8 @@ type User5 = { name: string; age: number; isAdmin: true };
 type NameOrAge2 = User5["name" | "age"];
 
 type NameOrAge3 = SomeTuple[0 | 1];
+
+// passing a number to a tuple, will return you a union og all the members inside that tuple.
 type Values = SomeTuple[number];
 
 type TupleKeys = keyof SomeTuple; //"0" | "1" | "2" | "map" ...
