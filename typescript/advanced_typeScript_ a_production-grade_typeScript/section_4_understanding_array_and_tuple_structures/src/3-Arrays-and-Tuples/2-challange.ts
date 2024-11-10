@@ -3,7 +3,7 @@ import { Equal, Expect } from "..";
 /**
  * The AddToEnd type adds an element to the end of a tuple.
  */
-type AddToEnd<Tuple extends any[], Element> = TODO;
+type AddToEnd<Tuple extends any[], Element> = [...Tuple, Element];
 
 // Test cases to validate the AddToEnd type
 type result1 = AddToEnd<[1, 2, 3], 4>;
