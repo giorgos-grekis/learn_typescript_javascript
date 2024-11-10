@@ -3,7 +3,7 @@ import { Equal, Expect } from "..";
 /**
  * The CombineTuples type merges two tuples into one.
  */
-type CombineTuples<Tuple1 extends any[], Tuple2 extends any[]> = TODO;
+type CombineTuples<Tuple1 extends any[], Tuple2 extends any[]> = [...Tuple1, ...Tuple2];
 
 // Test cases to validate the CombineTuples type
 type result1 = CombineTuples<[1, 2, 3], [4, 5]>;
