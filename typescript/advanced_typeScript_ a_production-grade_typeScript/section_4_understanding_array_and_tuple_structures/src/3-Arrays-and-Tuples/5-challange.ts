@@ -1,7 +1,7 @@
 /**
  * A utility type that enforces a non-empty array.
  */
-export type NonEmptyList<T> = TODO;
+export type NonEmptyList<T> = [T, ...T[]];
 
 /**
  * Function to simulate sending email to a list of email addresses.
