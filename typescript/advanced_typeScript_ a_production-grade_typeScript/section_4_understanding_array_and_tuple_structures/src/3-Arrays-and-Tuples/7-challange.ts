@@ -3,7 +3,8 @@ import { Equal, Expect } from "..";
 /**
  * Utility type to get the length of a tuple plus one.
  */
-export type ExtendedLength<Tuple extends any[]> = TODO;
+// export type ExtendedLength<Tuple extends any[]> = TODO;
+export type ExtendedLength<Tuple extends readonly unknown[]> = [...Tuple, any]["length"];
 
 // Example usage and tests
 
