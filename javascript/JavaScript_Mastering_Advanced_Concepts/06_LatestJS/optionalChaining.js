@@ -1,3 +1,8 @@
+/**
+ *
+ *  Optional chaining allows reading the value of a property located deep within a chain of connected objects without having to check each reference in the chain.
+ */
+
 // Function that generates a random user
 // IGNORE THIS CODE, THE RELEVANT CODE IS AT THE BOTTOM OF THE FILE
 function getUser() {
@@ -17,16 +22,12 @@ function getUser() {
   const lastName = lastNames[getRandomNumber(lastNames.length)];
   const emailDomain = emails[getRandomNumber(emails.length)];
   const age = getRandomNumber(100);
-  const shouldIncludeMethod =
-    includeMethod[getRandomNumber(includeMethod.length)];
-  const shouldIncludeAddress =
-    includeAddress[getRandomNumber(includeAddress.length)];
+  const shouldIncludeMethod = includeMethod[getRandomNumber(includeMethod.length)];
+  const shouldIncludeAddress = includeAddress[getRandomNumber(includeAddress.length)];
 
   // Construct a user object, email might be non-existent due to undefined emailDomain
   const user = {
-    email: emailDomain
-      ? `${firstName.toLowerCase()}.${lastName.toLowerCase()}@${emailDomain}`
-      : undefined,
+    email: emailDomain ? `${firstName.toLowerCase()}.${lastName.toLowerCase()}@${emailDomain}` : undefined,
     age: age, // age will always exist, just for the sake of structure
   };
   if (Math.random() > 0.5) {

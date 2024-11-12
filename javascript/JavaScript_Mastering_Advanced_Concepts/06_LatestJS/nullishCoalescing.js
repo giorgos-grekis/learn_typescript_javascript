@@ -1,3 +1,8 @@
+/**
+ *
+ * The nullish coalescing operator (??) is a logical operator that returns its right-hand operand when its left-hand operand is null or undefined, and otherwise returns its left-hand operand. This is a way to handle default values more predictably than using the OR (||) operator.
+ */
+
 // Function that generates a random user
 function getUser() {
   // Helper function to generate a random number
@@ -16,16 +21,12 @@ function getUser() {
   const lastName = lastNames[getRandomNumber(lastNames.length)];
   const emailDomain = emails[getRandomNumber(emails.length)];
   const age = getRandomNumber(4);
-  const shouldIncludeMethod =
-    includeMethod[getRandomNumber(includeMethod.length)];
-  const shouldIncludeAddress =
-    includeAddress[getRandomNumber(includeAddress.length)];
+  const shouldIncludeMethod = includeMethod[getRandomNumber(includeMethod.length)];
+  const shouldIncludeAddress = includeAddress[getRandomNumber(includeAddress.length)];
 
   // Construct a user object, email might be non-existent due to undefined emailDomain
   const user = {
-    email: emailDomain
-      ? `${firstName.toLowerCase()}.${lastName.toLowerCase()}@${emailDomain}`
-      : undefined,
+    email: emailDomain ? `${firstName.toLowerCase()}.${lastName.toLowerCase()}@${emailDomain}` : undefined,
     age: Math.random() > 0.5 ? age : null, // age will always exist, just for the sake of structure
   };
   if (Math.random() > 0.5) {
