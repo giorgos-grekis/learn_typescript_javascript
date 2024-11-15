@@ -10,3 +10,9 @@
   console.log("HELLO FROM IIFE!!!");
   console.log("SECRET IS: ", secret);
 })();
+
+(function () {
+  var origin = "Brazil";
+  console.log("HELLO FROM AN IIFE!!!");
+  console.log("Origin is: ", origin);
+})();

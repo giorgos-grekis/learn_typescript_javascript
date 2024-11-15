@@ -1,13 +1,13 @@
 // document.querySelector("button").addEventListener(
-//     "click",
-//     (function () {
-//       let count = 0;
-//       return function () {
-//         count += 1;
-//         console.log(`You clicked me ${count} times`);
-//       };
-//     })()
-//   );
+//   "click",
+//   (function () {
+//     let count = 0;
+//     return function () {
+//       count += 1;
+//       console.log(`You clicked me ${count} times`);
+//     };
+//   })()
+// );
 
 function createCounterButton(id) {
   const btn = document.getElementById(id);
