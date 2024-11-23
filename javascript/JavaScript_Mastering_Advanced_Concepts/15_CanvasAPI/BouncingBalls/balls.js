@@ -2,6 +2,7 @@ const canvas = document.querySelector("#ballCanvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext("2d");
+
 const balls = [];
 
 class Ball {
@@ -13,6 +14,7 @@ class Ball {
     this.size = Math.random() * 30 + 10;
     this.color = Ball.getRandomColor();
   }
+
   static getRandomColor() {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
@@ -46,8 +48,9 @@ class Ball {
 }
 
 function loop() {
-  ctx.fillStyle = "#f2f2f2";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  // ctx.fillStyle = "#f2f2f2";
+  // ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   for (let ball of balls) {
     ball.update();
     ball.draw();
@@ -55,6 +58,7 @@ function loop() {
   requestAnimationFrame(loop);
 }
 loop();
+
 canvas.addEventListener("click", (e) => {
   const ball = new Ball(e.clientX, e.clientY);
   balls.push(ball);

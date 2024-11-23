@@ -68,14 +68,6 @@
 // draw();
 
 /*** Canvas Paths ***/
-const canvas = document.querySelector("#canvas");
-const ctx = canvas.getContext("2d");
-ctx.fillStyle = "rgba(0,255,0)";
-const bigRectangle = new Path2D();
-bigRectangle.rect(0, 0, 200, 80);
-ctx.fill(bigRectangle);
-ctx.stroke(bigRectangle);
-
 // const canvas = document.querySelector("#canvas");
 // const ctx = canvas.getContext("2d");
 // ctx.fillStyle = "rgba(0,255,0)";
@@ -83,32 +75,3 @@ ctx.stroke(bigRectangle);
 // bigRectangle.rect(0, 0, 200, 80);
 // ctx.fill(bigRectangle);
 // ctx.stroke(bigRectangle);
-// ctx.fillStyle = "rgba(0,0, 255)";
-// ctx.fillRect(200, 100, 80, 80);
-
-// ctx.fillStyle = "rgba(255,0,0, 0.5)";
-// ctx.beginPath();
-// ctx.arc(145, 145, 50, 20, 2 * Math.PI);
-// ctx.stroke();
-
-// ctx.fillRect(0, 0, 200, 80);
-// ctx.fillStyle = "rgba(0,255,0, 0.5)";
-// ctx.fillRect(100, 50, 100, 130);
-// ctx.fillRect(50, 50, 200, 200);
-// ctx.clearRect(50, 50, 100, 100);
-// ctx.strokeStyle = "purple";
-// ctx.lineWidth = 4;
-// ctx.strokeRect(50, 50, 100, 100);
-
-// // ctx.beginPath();
-// // ctx.moveTo(50, 50);
-// // ctx.lineTo(100, 100);
-// // ctx.lineTo(200, 80);
-// // ctx.lineTo(200, 40);
-// // ctx.stroke();
-// // ctx.fill();
-
-// // ctx.beginPath();
-// // ctx.moveTo(200, 200);
-// // ctx.lineTo(200, 100);
-// // ctx.stroke();
