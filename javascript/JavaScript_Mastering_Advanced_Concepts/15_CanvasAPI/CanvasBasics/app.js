@@ -38,6 +38,44 @@
 // // ctx.fill();
 // ctx.stroke();
 
+/*** Canvas Arcs ***/
+// const canvas = document.querySelector("#canvas");
+// const ctx = canvas.getContext("2d");
+// ctx.fillStyle = "rgba(255,0,0,0.5)";
+// ctx.beginPath();
+// ctx.arc(145, 145, 50, 0, 2 * Math.PI); // => (xAxis: number, yAxis: number, radius: number, startAngle: number, endAngle: number , counterclockWise?: boolean)
+// ctx.stroke();
+// ctx.fill();
+
+/*** Canvas draw a heart ***/
+// function draw() {
+//   const canvas = document.getElementById("canvas");
+//   if (canvas.getContext) {
+//     const ctx = canvas.getContext("2d");
+
+//     // Cubic curves example
+//     ctx.beginPath();
+//     ctx.moveTo(75, 40);
+//     ctx.bezierCurveTo(75, 37, 70, 25, 50, 25);
+//     ctx.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
+//     ctx.bezierCurveTo(20, 80, 40, 102, 75, 120);
+//     ctx.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
+//     ctx.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
+//     ctx.bezierCurveTo(85, 25, 75, 37, 75, 40);
+//     ctx.fill();
+//   }
+// }
+// draw();
+
+/*** Canvas Paths ***/
+const canvas = document.querySelector("#canvas");
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "rgba(0,255,0)";
+const bigRectangle = new Path2D();
+bigRectangle.rect(0, 0, 200, 80);
+ctx.fill(bigRectangle);
+ctx.stroke(bigRectangle);
+
 // const canvas = document.querySelector("#canvas");
 // const ctx = canvas.getContext("2d");
 // ctx.fillStyle = "rgba(0,255,0)";
@@ -74,23 +112,3 @@
 // // ctx.moveTo(200, 200);
 // // ctx.lineTo(200, 100);
 // // ctx.stroke();
-
-// function draw() {
-//   const canvas = document.getElementById("canvas");
-//   if (canvas.getContext) {
-//     const ctx = canvas.getContext("2d");
-
-//     // Cubic curves example
-//     ctx.beginPath();
-//     ctx.moveTo(75, 40);
-//     ctx.bezierCurveTo(75, 37, 70, 25, 50, 25);
-//     ctx.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
-//     ctx.bezierCurveTo(20, 80, 40, 102, 75, 120);
-//     ctx.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
-//     ctx.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
-//     ctx.bezierCurveTo(85, 25, 75, 37, 75, 40);
-//     ctx.fill();
-//   }
-// }
-
-// draw();
