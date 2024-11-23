@@ -10,12 +10,33 @@
  *  - https://codepen.io/PavelDoGreat/pen/zdWzEL  (super)
  */
 
-const canvas = document.querySelector("#canvas");
-const ctx = canvas.getContext("2d");
-ctx.fillStyle = "rgba(255,0,0,0.5)";
-ctx.fillRect(0, 0, 200, 80); // => (xAxis: 100, yAxis: 100, width: 40, height: 80)
-ctx.fillStyle = "rgba(0,255,0,0.5)";
-ctx.fillRect(100, 50, 200, 130);
+/***  Basic canvas ***/
+// const canvas = document.querySelector("#canvas");
+// const ctx = canvas.getContext("2d");
+// ctx.fillStyle = "rgba(255,0,0,0.5)";
+// ctx.fillRect(0, 0, 200, 80); // => (xAxis: 100, yAxis: 100, width: 40, height: 80)
+// ctx.fillStyle = "rgba(0,255,0,0.5)";
+// ctx.fillRect(100, 50, 200, 130);
+
+/*** Canvas Strokes ***/
+// const canvas = document.querySelector("#canvas");
+// const ctx = canvas.getContext("2d");
+// ctx.fillStyle = "rgba(0, 255, 0,0.5)"; // this color is not used by stroke
+// ctx.fillRect(50, 50, 200, 200); // default color is black
+// ctx.clearRect(50, 50, 100, 100);
+// ctx.strokeStyle = "purple";
+// ctx.lineWidth = 4;
+// ctx.strokeRect(50, 50, 100, 100);
+
+/*** Canvas lines ***/
+// const canvas = document.querySelector("#canvas");
+// const ctx = canvas.getContext("2d");
+// ctx.beginPath();
+// ctx.moveTo(50, 50);
+// ctx.lineTo(100, 100);
+// ctx.lineTo(200, 80);
+// // ctx.fill();
+// ctx.stroke();
 
 // const canvas = document.querySelector("#canvas");
 // const ctx = canvas.getContext("2d");
